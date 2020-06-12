@@ -1,0 +1,65 @@
+h1,
+h6 {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: white;
+}
+h6 {
+  font-size: 14px;
+  opacity: 0.8;
+}
+h2,
+h3,
+h4 {
+  color: white;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+h4 {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.weather-today {
+    border: 5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    margin: 50px auto;
+    padding: 45px 0;
+  }
+  .units {
+    color: white;
+    opacity: 0.6;
+  }
+  .units:hover {
+    opacity: 0.4;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms ease;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  .active:hover {
+    opacity: 1;
+    cursor: default;
+  }
+  #current-weather-icon {
+    width: 60px;
+    position: relative;
+    left: 5px;
+  }
