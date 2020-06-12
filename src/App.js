@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Search from "./Search";
-import Weather from "./Weather";
 import Forecast from "./Forecast";
 
 
@@ -9,8 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container shadow">
-        <Search />
-        <Weather />
+        <Search city="Porto"/>
         <Forecast />
       </div>
       <br />
