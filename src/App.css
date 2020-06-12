@@ -1,5 +1,7 @@
-body {
+.App {
   font-family: "Roboto Mono", monospace;
+  max-width: 500px;
+  margin: 0 auto;
 }
 form {
   text-align: center;
@@ -38,7 +40,6 @@ h4 {
   opacity: 0.8;
 }
 .container {
-  max-width: 500px;
   margin-top: 10px;
   border: none;
   border-radius: 15px;
