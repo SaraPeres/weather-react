@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
-import Search from "./Search";
-import Forecast from "./Forecast";
+import Weather from "./Weather";
 
 
 export default function App() {
   return (
     <div className="App">
       <div className="container shadow">
-        <Search city="Porto"/>
-        <Forecast />
+        <Weather city="Porto"/>
       </div>
       <br />
       <p className="footer">

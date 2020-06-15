@@ -1,0 +1,21 @@
+.next-hours,
+.next-hours-icons,
+.next-hours-temp {
+  text-align: center;
+  color: white;
+}
+.forecast-icons {
+  width: 40px;
+}
+.line {
+  border: 1px solid white;
+  max-width: 87%;
+  margin: 5px auto 10px;
+  background: white;
+  border-radius: 5px;
+}
+.next-hours-temp {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
