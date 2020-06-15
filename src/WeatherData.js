@@ -17,7 +17,7 @@ export default function WeatherData(props) {
         </h2>
         <h3>
   <span id="current-weather-description">{props.data.description}</span>
-          <WeatherIcon code={props.data.icon} />
+          <WeatherIcon code={props.data.icon} size={45} />
         </h3>
         <h4>
   <span>{Math.round(props.data.tempMin)}˚/</span>

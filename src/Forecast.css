@@ -1,15 +1,20 @@
+.Forecast row {
+    text-align: center;
+}
+
 .next-hours,
 .next-hours-icons,
 .next-hours-temp {
   text-align: center;
   color: white;
 }
-.forecast-icons {
-  width: 40px;
+.next-hours-icons {
+position: relative;
+right: 12px;
 }
 .line {
   border: 1px solid white;
-  max-width: 87%;
+  max-width: 95%;
   margin: 5px auto 10px;
   background: white;
   border-radius: 5px;

@@ -29,7 +29,7 @@ let iconMatch = {
         <ReactAnimatedWeather
     icon= {iconMatch[props.code]}
     color= 'white'
-    size= {45}
+    size= {props.size}
     animate= {true}
   /></span>
     )
