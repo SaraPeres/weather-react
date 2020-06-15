@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import axios from "axios";
 import Weather from "./Weather";
+import Loader from 'react-loader-spinner';
 
 export default function Search(props) {
   const [city, setCity] = useState(props.city)
@@ -58,7 +59,16 @@ if (ready) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showWeather)
 return (
-  <div> Loading... </div>
+  <span className="loader">
+  <Loader
+         type="Puff"
+         color="#FFF"
+         height={70}
+         width={70}
+         timeout={3000}
+ 
+    />
+    </span>
 )  
 }
 }
