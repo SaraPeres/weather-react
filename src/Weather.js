@@ -1,13 +1,14 @@
 import React from "react";
 import "./Weather.css";
 import Units from "./Units"
+import Date from "./Date"
 
 export default function Weather(props) {
 
   return (
     <div>
       <h1 id="city-heading">{props.data.city}</h1>
-      <h6 id="date">Wed, 20 May 2020 13:47</h6>
+      <Date currentDate={props.data.date}/>
       <div className="weather-today shadow">
         <h2>  
        <Units celsius={props.data.temp}/>
