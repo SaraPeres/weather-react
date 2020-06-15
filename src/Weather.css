@@ -22,6 +22,7 @@ h4 {
 }
 h2 {
   font-size: 50px;
+  
 }
 h3 {
   font-size: 20px;
@@ -30,6 +31,7 @@ h3 {
 h4 {
   font-size: 14px;
   opacity: 0.8;
+  margin-top: 10px;
 }
 .weather-today {
     border: 5px solid white;
@@ -58,8 +60,12 @@ h4 {
     opacity: 1;
     cursor: default;
   }
-  #current-weather-icon {
-    width: 60px;
+  .weather-icon {
     position: relative;
-    left: 5px;
+    left: 10px;
+    top:5px;
   }
+  #current-weather-description {
+    position: relative;
+    bottom: 10px;
+  } 

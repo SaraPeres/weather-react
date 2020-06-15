@@ -27,7 +27,7 @@ export default function Search(props) {
       description: response.data.weather[0].main,
       tempMin:response.data.main.temp_min,
       tempMax:response.data.main.temp_max,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt*1000)
     })
     setReady(true)

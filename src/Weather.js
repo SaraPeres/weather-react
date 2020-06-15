@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 import Units from "./Units"
 import Date from "./Date"
+import WeatherIcon from "./WeatherIcon"
 
 export default function Weather(props) {
 
@@ -15,11 +16,7 @@ export default function Weather(props) {
         </h2>
         <h3>
   <span id="current-weather-description">{props.data.description}</span>
-          <img
-            src={props.data.icon}
-            alt="Weather Icon"
-            id="current-weather-icon"
-          />
+          <WeatherIcon code={props.data.icon} />
         </h3>
         <h4>
   <span>{Math.round(props.data.tempMin)}˚/</span>
