@@ -1,5 +1,6 @@
 import React from "react";
 import "./Weather.css";
+import Units from "./Units"
 
 export default function Weather(props) {
 
@@ -8,15 +9,8 @@ export default function Weather(props) {
       <h1 id="city-heading">{props.data.city}</h1>
       <h6 id="date">Wed, 20 May 2020 13:47</h6>
       <div className="weather-today shadow">
-        <h2>
-  <span id="temperature">{Math.round(props.data.temp)}°</span>
-          <a href="#" id="celsius" className="active units">
-            C
-          </a>
-          |
-          <a href="#" id="fahrenheit" className="units">
-            F
-          </a>
+        <h2>  
+       <Units celsius={props.data.temp}/>
         </h2>
         <h3>
   <span id="current-weather-description">{props.data.description}</span>
